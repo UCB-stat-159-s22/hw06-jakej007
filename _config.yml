@@ -1,0 +1,25 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: ReadLIGO (HW6)
+author: LSC and Jacob Jossart
+logo: logo.png
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: 'off' # force
+
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/UCB-stat-159-s22/hw06-jakej007
+  branch: main
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_repository_button: true
+
+launch_buttons:
+  binderhub_html: https://mybinder.org/v2/gh/UCB-stat-159-s22/hw06-jakej007/HEAD?labpath=index.ipynb # https://mybinder.org
