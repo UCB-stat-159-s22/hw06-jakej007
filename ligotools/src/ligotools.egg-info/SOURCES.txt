@@ -5,3 +5,7 @@ src/ligotools.egg-info/SOURCES.txt
 src/ligotools.egg-info/dependency_links.txt
 src/ligotools.egg-info/requires.txt
 src/ligotools.egg-info/top_level.txt
+src/ligotools.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+src/ligotools.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+src/ligotools.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
+src/ligotools.egg-info/.ipynb_checkpoints/top_level-checkpoint.txt

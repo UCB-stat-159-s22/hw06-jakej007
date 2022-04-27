@@ -1,4 +1,6 @@
 numpy
+tqdm
 scipy
 matplotlib
 h5py
+pip
