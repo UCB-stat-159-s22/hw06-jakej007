@@ -5,7 +5,7 @@ sphinx-build  . _build/html -D html_baseurl=${JUPYTERHUB_SERVICE_PREFIX}/proxy/a
 
 jupyter-book build .
 
-https://stat159.datahub.berkeley.edu/user-redirect/proxy/8000/index.html
+echo "https://stat159.datahub.berkeley.edu/user-redirect/proxy/8000/index.html"
 
 cd _build/html
 python -m http.server
