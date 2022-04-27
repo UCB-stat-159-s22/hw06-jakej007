@@ -602,7 +602,33 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # Install local build of ligotools</span>
-<span class="c1">#!bash -ic &quot;pip install -e ligotools&quot;</span>
+<span class="o">!</span>bash -ic <span class="s2">&quot;pip install -e .&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Obtaining file:///home/jovyan/homeworks/homework6/hw06-jakej007
+Requirement already satisfied: numpy in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (1.22.3)
+Requirement already satisfied: tqdm in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (4.54.1)
+Requirement already satisfied: scipy in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (1.8.0)
+Requirement already satisfied: matplotlib in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (3.5.1)
+Requirement already satisfied: h5py in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (3.6.0)
+Requirement already satisfied: pip in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (20.3.1)
+Requirement already satisfied: numpy in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (1.22.3)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (3.0.8)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (2.8.2)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (1.4.2)
+Requirement already satisfied: cycler&gt;=0.10 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (0.11.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (4.33.3)
+Requirement already satisfied: pillow&gt;=6.2.0 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (9.1.0)
+Requirement already satisfied: numpy in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (1.22.3)
+Requirement already satisfied: packaging&gt;=20.0 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (21.3)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /srv/conda/lib/python3.8/site-packages (from matplotlib-&gt;ligotools==0.0.1) (3.0.8)
+Requirement already satisfied: six&gt;=1.5 in /srv/conda/lib/python3.8/site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib-&gt;ligotools==0.0.1) (1.15.0)
+Requirement already satisfied: numpy in /srv/conda/lib/python3.8/site-packages (from ligotools==0.0.1) (1.22.3)
+Installing collected packages: ligotools
+  Running setup.py develop for ligotools
+Successfully installed ligotools
 </pre></div>
 </div>
 </div>
@@ -626,21 +652,6 @@
 <span class="c1"># LIGO-specific readligo.py </span>
 <span class="kn">from</span> <span class="nn">ligotools</span> <span class="kn">import</span> <span class="n">readligo</span> <span class="k">as</span> <span class="n">rl</span>
 <span class="kn">from</span> <span class="nn">ligotools</span> <span class="kn">import</span> <span class="n">utils</span> <span class="k">as</span> <span class="n">lutils</span>
-
-<span class="c1"># you might get a matplotlib warning here; you can ignore it.</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">ImportError</span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-1-e2090c66fc2a&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="c1"># LIGO-specific readligo.py</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">from</span> <span class="nn">ligotools</span> <span class="kn">import</span> <span class="n">readligo</span> <span class="k">as</span> <span class="n">rl</span>
-<span class="ne">---&gt; </span><span class="mi">17</span> <span class="kn">from</span> <span class="nn">ligotools</span> <span class="kn">import</span> <span class="n">utils</span> <span class="k">as</span> <span class="n">lutils</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span> 
-<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="c1"># you might get a matplotlib warning here; you can ignore it.</span>
-
-<span class="ne">ImportError</span>: cannot import name utils
 </pre></div>
 </div>
 </div>
@@ -1589,16 +1600,16 @@ DATA
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "ligo"
+            mode: "ligohw6"
         },
         kernelOptions: {
-            kernelName: "ligo",
+            kernelName: "ligohw6",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'ligo'</script>
+    <script>kernelName = 'ligohw6'</script>
 
               </div>
               
