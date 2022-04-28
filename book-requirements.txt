@@ -2,7 +2,8 @@
 # Note that these deps should already be satisfied by the environment.yml,
 # but we list them here separately so github actions runs as fast as possible.
 
-jupyter-book#==0.12.1
+jupyter-book
+#==0.12.1
 #jupyter-sphinx==0.3.2
 #markdown-it-py==1.1.0
 #markupsafe==2.0.1
